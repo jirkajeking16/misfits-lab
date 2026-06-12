@@ -7,6 +7,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
 import { Innertube } from "youtubei.js";
 import { registerAlgrowTools } from "./algrow_tools.js";
+import { registerDbTools } from "./db_tools.js";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -57,6 +58,7 @@ export function buildServer() {
   const server = new McpServer({ name: "Misfits Lab", version: "2.1.0" });
   registerTools(server);
   registerAlgrowTools(server);
+  registerDbTools(server);
   return server;
 }
 

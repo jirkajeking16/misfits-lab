@@ -1,0 +1,22 @@
+{
+  "comment": "Seed search queries the nightly crawler uses to discover channels. Edit freely — each query is searched for recent uploads and every channel found gets tracked.",
+  "niches": [
+    "glow up for women",
+    "beauty habits that changed my face",
+    "skincare routine",
+    "makeup tutorial",
+    "style tips women",
+    "beauty over 40",
+    "makeup over 50",
+    "style over 50 women",
+    "look younger naturally",
+    "anti aging skincare",
+    "homestead hacks",
+    "forgotten survival skills",
+    "amish living",
+    "frugal living tips",
+    "save money tricks",
+    "side hustle guide",
+    "dog training secrets"
+  ]
+}
