@@ -1,0 +1,5 @@
+name: nightly-crawl
+on: {schedule: [{cron: "0 3 * * *"}], workflow_dispatch: {}}
+permissions: {contents: write}
+concurrency: {group: crawl, cancel-in-progress: false}
+jobs: {crawl: {runs-on: ubuntu-latest, timeout-minutes: 320, steps: [{uses: "actions/checkout@v4"}, {uses: "actions/setup-node@v4", with: {node-version: 20}}, {run: "npm install --no-audit --no-fund"}, {run: "node crawler.mjs"}, {run: "git config user.name crawler && git config user.email crawler@misfits.lab && git add data && (git diff --cached --quiet || git commit -m snapshot) && git push"}]}}
