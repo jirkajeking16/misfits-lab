@@ -1,11 +1,12 @@
 {
-  "last_run": "2026-06-12T17:43:44.838Z",
-  "channels_tracked": 453,
+  "last_run": "2026-06-13T07:34:16.887Z",
+  "channels_tracked": 578,
   "snapshotted_today": 0,
-  "discovered_today": 453,
-  "requests": 1844,
-  "errors": 453,
+  "discovered_today": 125,
+  "requests": 2344,
+  "errors": 578,
   "snap_dates": [
-    "2026-06-12"
+    "2026-06-12",
+    "2026-06-13"
   ]
 }
